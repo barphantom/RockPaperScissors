@@ -1,63 +1,99 @@
 body {
     height: 100vh;
+    width: 100vw;
     margin: 0;
-    /*background: rgb(2,0,36);*/
-    /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(72,35,182,0.9787405303030303) 25%, rgba(0,212,255,1) 100%);*/
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(230,180,88,1) 0%, rgba(210,187,102,0.5) 20%, rgba(0,255,248,1) 100%);
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+
+    background-color: #0081a7;
+
+    /*background: rgb(0,0,0);*/
+    /*background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(230,180,88,1) 0%, rgba(210,187,102,0.5) 20%, rgba(0,255,248,1) 100%);*/
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 20px 30px 20px;
+    background-color: #00afb9;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    color: #fed9b7;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    color: chocolate;
+    color: #fdfcdc;
     text-align: center;
     margin: 0;
-    padding-top: 2rem;
     font-size: 68px;
     text-decoration: underline;
+    font-weight: 900;
 }
 
 h3 {
-    color: black;
+    /*color: black;*/
     text-align: center;
-    margin: 0;
-    padding-top: 1rem;
+    margin: 10px;
     font-size: 32px;
 }
 
 h5 {
-    color: black;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 15px;
+    /*color: black;*/
+    text-align: center;
+    margin: 20px;
+    font-size: 26px;
 }
 
-.content {
+.result {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
 }
 
-.left-side {
+.result-left,
+.result-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.left-buttons {
-    display: flex;
-    gap: 1rem;
+.result-left p,
+.result-right p {
+    font-size: 68px;
+    margin: 10px;
 }
 
-button {
-    height: 200px;
-    width: 200px;
-    border: none;
-    background: none;
-    padding: 0;
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.button {
+    background-color: #fdfcdc;
+    border-radius: 20px;
     cursor: pointer;
 }
+.button:hover {
+    background-color: #90a955;
+}
 
-button img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.button p {
+    font-size: 100px;
+    margin: 0;
 }

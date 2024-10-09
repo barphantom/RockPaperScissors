@@ -4,29 +4,46 @@
     <meta charset="UTF-8">
     <title>RockPaperScissors</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <h3>First to score 3 points wins </h3>
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
+    </div>
     <div class="content">
-        <div class="left-side">
-            <h5>Player</h5>
-            <div class="left-buttons">
-                <button class="image-button">
-                    <img src="paper.png">
-                </button>
-                <button class="image-button">
-                    <img src="rock.png">
-                </button>
-                <button class="image-button">
-                    <img src="scissors.png">
-                </button>
+        <h3>First to score 3 points wins </h3>
+        <h5 id="text-current-action">Let's start!</h5>
+        <div class="result">
+            <div class="result-left">
+                <h3>Player</h3>
+                <p>🖐️</p>
+                <h3>0</h3>
+            </div>
+            <div class="result-right">
+                <h3>Opponent</h3>
+                <p>✌️</p>
+                <h3>0</h3>
             </div>
         </div>
-
-        <div class="right-side">
-            <h5>Computer</h5>
+        <div class="buttons">
+            <div class="button">
+                <p id="button-paragraph">🖐️</p>
+            </div>
+            <div class="button">
+                <p>✊</p>
+            </div>
+            <div class="button">
+                <p>✌️</p>
+            </div>
         </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2024 barphantom &nbsp;</p>
+        <a href="https://github.com/barphantom" target="_blank">
+            <img src="github-mark/github-mark.svg" alt="GitHub" height="30" width="30">
+        </a>
     </div>
 
     <script src="script.js"></script>

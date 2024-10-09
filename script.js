@@ -1,7 +1,14 @@
+document.getElementById("button-paragraph").addEventListener("click", myFunction)
+
 let options = ["rock", "paper", "scissors"];
 
 let pointsUser = 0;
 let pointsComputer = 0;
+
+function myFunction() {
+    document.getElementById("text-current-action").innerHTML = "Ta funkcja naprawdę działa!"
+
+}
 
 function getHumanChoice() {
     let incorrect = true;
