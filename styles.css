@@ -76,6 +76,11 @@ h5 {
     margin: 10px;
 }
 
+/*#left-choice {*/
+/*    background-color: #fed9b7;*/
+/*    border-radius: 50%;*/
+/*}*/
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -85,15 +90,34 @@ h5 {
 }
 
 .button {
-    background-color: #fdfcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    padding-bottom: 10px;
     border-radius: 20px;
     cursor: pointer;
+    background-color: #fdfcdc;
+    transition: all 0.2s ease;
 }
 .button:hover {
     background-color: #90a955;
+    transform: translateY(-5px);
+}
+.button:active {
+    background-color: #64753a;
+    transform: translateY(2px);
 }
 
 .button p {
     font-size: 100px;
     margin: 0;
+}
+
+#text-current-action,
+#score-player,
+#score-computer {
+    color: #f07167;
+    font-weight: 900;
 }
